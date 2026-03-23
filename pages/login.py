@@ -33,6 +33,4 @@ class LoginPage:
         self.submeter()
 
     def obter_mensagem_erro(self):
-        return self.wait.until(
-            EC.visibility_of_element_located(self.ERROR_MSG)
-        ).text
+        return self.wait.until(EC.visibility_of_element_located(self.ERROR_MSG)).text
